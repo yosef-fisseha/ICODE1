@@ -1,0 +1,23 @@
+{
+  "name": "icode",
+  "version": "1.0.0",
+  "description": "A course management application with video content from YouTube.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "lucide-react": "^0.1.0"
+  },
+  "devDependencies": {
+    "typescript": "latest",
+    "@types/react": "latest",
+    "@types/node": "latest"
+  },
+  "license": "MIT"
+}

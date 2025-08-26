@@ -1,0 +1,72 @@
+Here are the contents for the course data files in the specified directory:
+
+**app/courses/data/1.json**
+{
+  "title": "Computer Basics for Beginners",
+  "description": "Learn fundamental computer skills including file management, basic software usage, and digital literacy.",
+  "image": "/computer-basics.png",
+  "backgroundColor": "bg-blue-600",
+  "instructor": "Sarah Ahmed",
+  "rating": 4.9,
+  "students": 850,
+  "duration": "6 hours",
+  "videos": [
+    { "id": 1, "title": "Introduction to Computers", "duration": "12:30", "thumbnail": "/computer-basics-1.jpg", "url": "https://www.youtube.com/embed/ysz5S6PUM-U" },
+    { "id": 2, "title": "Operating System Basics", "duration": "18:45", "thumbnail": "/computer-basics-2.jpg", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ" },
+    { "id": 3, "title": "File Management", "duration": "15:20", "thumbnail": "/computer-basics-3.jpg", "url": "https://www.youtube.com/embed/ScMzIvxBSi4" },
+    { "id": 4, "title": "Internet Browsing Safety", "duration": "20:15", "thumbnail": "/computer-basics-4.jpg", "url": "https://www.youtube.com/embed/tgbNymZ7vqY" }
+  ]
+}
+
+**app/courses/data/2.json**
+{
+  "title": "Web Development for Beginners",
+  "description": "An introduction to web development, covering HTML, CSS, and JavaScript basics.",
+  "image": "/web-development.png",
+  "backgroundColor": "bg-green-600",
+  "instructor": "John Doe",
+  "rating": 4.8,
+  "students": 600,
+  "duration": "8 hours",
+  "videos": [
+    { "id": 1, "title": "HTML Basics", "duration": "10:00", "thumbnail": "/web-dev-1.jpg", "url": "https://www.youtube.com/embed/xyz123" },
+    { "id": 2, "title": "CSS Fundamentals", "duration": "15:30", "thumbnail": "/web-dev-2.jpg", "url": "https://www.youtube.com/embed/abc456" },
+    { "id": 3, "title": "JavaScript Introduction", "duration": "20:45", "thumbnail": "/web-dev-3.jpg", "url": "https://www.youtube.com/embed/def789" }
+  ]
+}
+
+**app/courses/data/3.json**
+{
+  "title": "Data Science with Python",
+  "description": "Learn the basics of data science using Python, including data analysis and visualization.",
+  "image": "/data-science.png",
+  "backgroundColor": "bg-red-600",
+  "instructor": "Emily Johnson",
+  "rating": 4.7,
+  "students": 400,
+  "duration": "10 hours",
+  "videos": [
+    { "id": 1, "title": "Introduction to Data Science", "duration": "14:00", "thumbnail": "/data-science-1.jpg", "url": "https://www.youtube.com/embed/ghi012" },
+    { "id": 2, "title": "Data Analysis with Pandas", "duration": "18:30", "thumbnail": "/data-science-2.jpg", "url": "https://www.youtube.com/embed/jkl345" },
+    { "id": 3, "title": "Data Visualization with Matplotlib", "duration": "22:15", "thumbnail": "/data-science-3.jpg", "url": "https://www.youtube.com/embed/mno678" }
+  ]
+}
+
+**app/courses/data/4.json**
+{
+  "title": "Introduction to Machine Learning",
+  "description": "A beginner's guide to machine learning concepts and algorithms.",
+  "image": "/machine-learning.png",
+  "backgroundColor": "bg-purple-600",
+  "instructor": "Michael Brown",
+  "rating": 4.6,
+  "students": 300,
+  "duration": "12 hours",
+  "videos": [
+    { "id": 1, "title": "Machine Learning Basics", "duration": "16:00", "thumbnail": "/ml-1.jpg", "url": "https://www.youtube.com/embed/pqr901" },
+    { "id": 2, "title": "Supervised Learning", "duration": "20:00", "thumbnail": "/ml-2.jpg", "url": "https://www.youtube.com/embed/stu234" },
+    { "id": 3, "title": "Unsupervised Learning", "duration": "25:00", "thumbnail": "/ml-3.jpg", "url": "https://www.youtube.com/embed/vwx567" }
+  ]
+}
+
+... (You can continue this pattern for additional courses, ensuring each JSON file contains unique data for each course.)

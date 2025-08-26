@@ -1,0 +1,42 @@
+{
+  "title": "Mastering Microsoft Word Essentials",
+  "description": "Learn the essential skills to confidently use Microsoft Word. From formatting text and managing documents to inserting tables, images, and preparing professional reports, this course equips beginners with practical Word knowledge.",
+  "image": "/ms-word.jpg",
+  "backgroundColor": "bg-blue-800",
+  "instructor": "Lidya Alemu",
+  "rating": 4.8,
+  "students": 1600,
+  "duration": "5 hours",
+  "videos": [
+    {
+      "id": 1,
+      "title": "መሰረታዊ Microsoft Word ትምህርት - ክፍል 1 (MS Word Basics Part 1)",
+      "duration": "12:15",
+      "thumbnail": {
+        "src": "/ms-word-1.jpg",
+        "alt": "MS Word Basics Part 1"
+      },
+      "url": "https://www.youtube.com/watch?v=3chRmzh6H08"
+    },
+    {
+      "id": 2,
+      "title": "የMicrosoft Word ፎርማቲንግ እና ሰነድ አስተዳደር (Word Formatting & Document Management)",
+      "duration": "13:40",
+      "thumbnail": {
+        "src": "/ms-word-2.jpg",
+        "alt": "Word Formatting and Document Management"
+      },
+      "url": "https://www.youtube.com/embed/lKPi9KppXME"
+    },
+    {
+      "id": 3,
+      "title": "በWord ሰነድ ሰንጠረዥና ምስል መጨመር (Inserting Tables and Images in Word)",
+      "duration": "14:05",
+      "thumbnail": {
+        "src": "/ms-word-3.jpg",
+        "alt": "Inserting Tables and Images"
+      },
+      "url": "https://www.youtube.com/embed/xDNWuwOLj9E"
+    }
+  ]
+}

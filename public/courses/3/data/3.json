@@ -1,0 +1,22 @@
+{
+  "title": "Digital Literacy Fundamentals",
+  "description": "A comprehensive introduction to digital literacy—covering essential skills like navigating devices, evaluating online content, and practicing safe, responsible usage of digital tools.",
+  "image": "/digital-literacy.jpg",
+  "backgroundColor": "bg-green-1000",
+  "instructor": "Mekdes Assefa",
+  "rating": 4.8,
+  "students": 1200,
+  "duration": "5 hours",
+  "videos": [
+    {
+      "id": 1,
+      "title": "ዲጂታል ሊትሬሲ ምንድን ነዉ ? (What is Digital Literacy?)",
+      "duration": "10:45",
+      "thumbnail": {
+        "src": "/digital-literacy-thumb.jpg",
+        "alt": "ዲጂታል ሊትሬሲ ምንድን"
+      },
+      "url": "https://www.youtube.com/embed/giTy4rwzYjE"
+    }
+  ]
+}

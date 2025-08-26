@@ -1,0 +1,52 @@
+{
+  "title": "Computer Basics for Beginners",
+  "description": "Learn fundamental computer skills including file management, basic software usage, and digital literacy.",
+  "image": "/cs.jpg",
+  "backgroundColor": "bg-blue-1000",
+  "instructor": "Sarah Ahmed",
+  "rating": 4.9,
+  "students": 850,
+  "duration": "6 hours",
+  "videos": [
+    {
+      "id": 1,
+      "title": "Introduction to Computers",
+      "duration": "12:30",
+      "thumbnail": {
+        "src": "/Cs.jpg",
+        "alt": "Intro to Computers"
+      },
+      "url": "https://www.youtube.com/embed/sms78UR-3MU?list=PLttptd1HG9Q5rsVB-LT-hBbuuLoCceKZ9"
+    },
+    {
+      "id": 2,
+      "title": "Operating System Basics",
+      "duration": "18:45",
+      "thumbnail": {
+        "src": "/computer-basics-2.jpg",
+        "alt": "Operating System Basics"
+      },
+      "url": "https://www.youtube.com/embed/z340pH1XyEY?list=PLku1g5AxpNplTxURX4ylHhTbCggb3DSpq" 
+    },
+    {
+      "id": 3,
+      "title": "File Management",
+      "duration": "15:20",
+      "thumbnail": {
+        "src": "/computer-basics-3.jpg",
+        "alt": "File Management"
+      },
+      "url": "https://www.youtube.com/embed/k2HpFDJzchk"
+    },
+    {
+      "id": 4,
+      "title": "Internet Browsing Safety",
+      "duration": "20:15",
+      "thumbnail": {
+        "src": "/computer-basics-4.jpg",
+        "alt": "Internet Browsing Safety"
+      },
+      "url": "https://www.youtube.com/embed/aHIXa911yxU"
+    }
+  ]
+}

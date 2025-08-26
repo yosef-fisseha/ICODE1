@@ -1,0 +1,16 @@
+{
+  "title": "Advanced JavaScript Concepts",
+  "description": "Dive deep into advanced JavaScript topics including closures, promises, async/await, and more.",
+  "image": "/advanced-javascript.png",
+  "backgroundColor": "bg-green-600",
+  "instructor": "John Doe",
+  "rating": 4.8,
+  "students": 500,
+  "duration": "8 hours",
+  "videos": [
+    { "id": 1, "title": "Understanding Closures", "duration": "15:00", "thumbnail": "/advanced-javascript-1.jpg", "url": "https://www.youtube.com/embed/1g4m1g4m1g4" },
+    { "id": 2, "title": "Promises in JavaScript", "duration": "20:30", "thumbnail": "/advanced-javascript-2.jpg", "url": "https://www.youtube.com/embed/2g4m2g4m2g4" },
+    { "id": 3, "title": "Async/Await Explained", "duration": "18:15", "thumbnail": "/advanced-javascript-3.jpg", "url": "https://www.youtube.com/embed/3g4m3g4m3g4" },
+    { "id": 4, "title": "JavaScript Design Patterns", "duration": "25:45", "thumbnail": "/advanced-javascript-4.jpg", "url": "https://www.youtube.com/embed/4g4m4g4m4g4" }
+  ]
+}
