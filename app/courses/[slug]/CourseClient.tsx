@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Play, Clock, Users, Star, BookOpen } from "lucide-react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import Link from "next/link";
 
 interface Props {
   courseId: string;
@@ -20,8 +21,8 @@ export default function CourseClient({ courseId }: Props) {
     async function fetchCourse() {
       setLoading(true);
       try {
+        // Fetch course JSON dynamically based on slug
         const res = await fetch(`/courses/${courseId}.json`);
-
         if (!res.ok) throw new Error("Course not found");
         const data = await res.json();
         setCourse(data);
@@ -56,6 +57,13 @@ export default function CourseClient({ courseId }: Props) {
   return (
     <DashboardLayout>
       <div className="space-y-6">
+        {/* Back Button */}
+        <Link href="/courses">
+          <Button className="mb-4 px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white">
+            ← Back to Courses
+          </Button>
+        </Link>
+
         {/* Course Header */}
         <div className="bg-gray-800 rounded-lg p-6">
           <div className="flex flex-col lg:flex-row gap-6">
