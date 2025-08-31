@@ -2,11 +2,10 @@
 
 import QuizzesPageClient from "./QuizzesPageClient";
 
-interface Props {
+interface PageProps {
   params: { slug: string };
 }
 
-// No need to import generateStaticParams here — it inherits [slug] param
-export default function QuizzesPage({ params }: Props) {
+export default function QuizzesPage({ params }: PageProps) {
   return <QuizzesPageClient courseSlug={params.slug} />;
 }
