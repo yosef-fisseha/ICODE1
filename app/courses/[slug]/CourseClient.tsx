@@ -87,7 +87,7 @@ export default function CourseClient({ courseId }: Props) {
                   Start Learning
                 </Button>
 
-                <Link href={`/courses/${params.slug}/quizzes`}>
+                <Link href={`/courses/${courseId}/quizzes`}>
                   <Button className="bg-purple-600 hover:bg-purple-700 text-white">
                     Quizzes
                   </Button>
