@@ -11,6 +11,7 @@ export default function CoursesPage() {
 
   const beginnerCourses = [
     {
+      slug: "fundamentals-of-web-development",
       title: "Fundamentals of Web Development",
       description:
         "Comprehensive introduction to the essential concepts and skills necessary to build dynamic and interactive websites.",
@@ -19,56 +20,62 @@ export default function CoursesPage() {
       image: "/web-development-fundamentals.webp",
     },
     {
+      slug: "introduction-to-programming",
       title: "Introduction to Programming",
       description:
         "A journey that equips you with the fundamental knowledge and skills needed to become a proficient programmer.",
       status: "NOT VIEWED",
       lessons: 5,
-      image: "/programming.jpg",
+      image: "/Intro-to-Programming.webp",
     },
     {
+      slug: "introduction-to-cpp",
       title: "Introduction to C++",
       description:
         "Comprehensive foundation in one of the most widely used and powerful programming languages in the world.",
       status: "NOT VIEWED",
       lessons: 4,
-      image: "/cpp.jpg",
+      image: "/Introduction-to.jpg",
     },
   ];
 
   const intermediateCourses = [
     {
+      slug: "javascript-mastery",
       title: "JavaScript Mastery",
       description: "Master modern JavaScript and build interactive web apps.",
       status: "NOT VIEWED",
       lessons: 8,
-      image: "/js.jpg",
+      image: "/JavaScript Mastery.webp",
     },
     {
+      slug: "react-basics",
       title: "React Basics",
       description: "Learn the fundamentals of building user interfaces with React.",
       status: "NOT VIEWED",
       lessons: 6,
-      image: "/react.jpg",
+      image: "/reactjs-basics.jpg",
     },
   ];
 
   const advancedCourses = [
     {
+      slug: "full-stack-development",
       title: "Full-Stack Development",
       description:
         "Learn to build scalable web applications with front-end and back-end integration.",
       status: "NOT VIEWED",
       lessons: 10,
-      image: "/fullstack.jpg",
+      image: "/Full-Stack Development.png",
     },
     {
+      slug: "data-structures-algorithms",
       title: "Data Structures & Algorithms",
       description:
         "Advanced problem-solving and optimization techniques for coding interviews and software engineering.",
       status: "NOT VIEWED",
       lessons: 12,
-      image: "/dsa.jpg",
+      image: "/Data Structures & Algorithms.webp",
     },
   ];
 
@@ -111,7 +118,8 @@ export default function CoursesPage() {
         {getCourses().map((course, index) => (
           <Card
             key={index}
-            className="rounded-2xl shadow-lg bg-gray-800 text-white"
+            className="rounded-2xl shadow-lg bg-gray-800 text-white cursor-pointer hover:scale-[1.02] transition"
+            onClick={() => router.push(`/courses/${course.slug}`)}
           >
             <CardContent className="flex p-4">
               <img
