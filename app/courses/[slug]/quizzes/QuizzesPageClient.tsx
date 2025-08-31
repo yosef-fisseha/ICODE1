@@ -65,6 +65,7 @@ export default function QuizzesPageClient({ courseSlug }: Props) {
         <p className="p-6 text-white">Loading...</p>
       </DashboardLayout>
     );
+
   if (quizzes.length === 0)
     return (
       <DashboardLayout>

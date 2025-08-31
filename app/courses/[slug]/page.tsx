@@ -1,7 +1,6 @@
-// app/courses/[slug]/page.tsx
 import CourseClient from "./CourseClient";
 
-// ✅ List all course slugs here for static export
+// List all course slugs
 const courses = [
   { slug: "fundamentals-of-web-development" },
   { slug: "introduction-to-programming" },

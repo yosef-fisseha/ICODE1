@@ -128,27 +128,6 @@ export default function CourseClient({ courseId }: Props) {
             ))}
           </div>
         </div>
-
-        {/* Video Player Modal */}
-        <Dialog open={!!selectedVideo} onOpenChange={() => setSelectedVideo(null)}>
-          <DialogContent className="max-w-4xl">
-            <DialogHeader>
-              <DialogTitle>{selectedVideo?.title}</DialogTitle>
-            </DialogHeader>
-            {selectedVideo && (
-              <iframe
-                width="100%"
-                height="450"
-                src={selectedVideo.url}
-                title={selectedVideo.title}
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="rounded"
-              ></iframe>
-            )}
-          </DialogContent>
-        </Dialog>
       </div>
     </DashboardLayout>
   );
