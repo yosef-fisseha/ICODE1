@@ -8,6 +8,17 @@ import { Play, Clock, Users, Star, BookOpen } from "lucide-react"
 import { useParams } from "next/navigation"
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 
+// 👇 NEW: Tell Next.js what course IDs exist for static export
+export async function generateStaticParams() {
+  // you can hardcode, or better: read from a JSON file with all courses
+  return [
+    { id: "1" },
+    { id: "2" },
+    { id: "3" },
+    { id: "7" }, // add all existing courses here
+  ]
+}
+
 export default function CoursePage() {
   const params = useParams()
   const courseId = params.id as string
@@ -19,7 +30,7 @@ export default function CoursePage() {
     async function fetchCourse() {
       setLoading(true)
       try {
-        // Try to fetch from /courses/[id]/data/[id].json in the public folder
+        // fetch course JSON from public/courses/[id]/data/[id].json
         const res = await fetch(`/courses/${courseId}/data/${courseId}.json`)
         if (!res.ok) throw new Error("Course not found")
         const data = await res.json()
@@ -58,9 +69,7 @@ export default function CoursePage() {
         {/* Course Header */}
         <div className="bg-gray-800 rounded-lg p-6">
           <div className="flex flex-col lg:flex-row gap-6">
-            <div
-              className={`${course.backgroundColor} rounded-lg p-8 flex items-center justify-center min-w-[200px] h-[200px]`}
-            >
+            <div className={`${course.backgroundColor} rounded-lg p-8 flex items-center justify-center min-w-[200px] h-[200px]`}>
               <img src={course.image} alt={course.title} className="w-32 h-32 object-contain" />
             </div>
 
