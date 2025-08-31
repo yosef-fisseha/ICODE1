@@ -3,6 +3,8 @@
 import { useState, useEffect } from "react";
 import { DashboardLayout } from "@/components/dashboard-layout";
 import { Button } from "@/components/ui/button";
+import QuizzesPageClient from "./QuizzesPageClient";
+
 
 interface Quiz {
   id: number;
