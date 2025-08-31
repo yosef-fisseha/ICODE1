@@ -1,0 +1,23 @@
+{
+  "courseSlug": "data-structures-algorithms",
+  "quizzes": [
+    {
+      "id": 1,
+      "question": "Which data structure uses FIFO?",
+      "options": ["Queue", "Stack", "Tree"],
+      "correct": 0
+    },
+    {
+      "id": 2,
+      "question": "Big O of linear search is?",
+      "options": ["O(n)", "O(log n)", "O(1)"],
+      "correct": 0
+    },
+    {
+      "id": 3,
+      "question": "Which is a non-linear data structure?",
+      "options": ["Tree", "Array", "Linked List"],
+      "correct": 0
+    }
+  ]
+}

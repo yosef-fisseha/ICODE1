@@ -1,0 +1,23 @@
+{
+  "courseSlug": "introduction-to-programming",
+  "quizzes": [
+    {
+      "id": 1,
+      "question": "Which symbol is used for assignment in most languages?",
+      "options": ["=", "==", "!="],
+      "correct": 0
+    },
+    {
+      "id": 2,
+      "question": "Which of these is a programming language?",
+      "options": ["Python", "HTML", "CSS"],
+      "correct": 0
+    },
+    {
+      "id": 3,
+      "question": "What is a loop used for?",
+      "options": ["Repeating code", "Stopping code", "Printing text"],
+      "correct": 0
+    }
+  ]
+}

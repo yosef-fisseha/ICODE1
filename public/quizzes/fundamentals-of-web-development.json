@@ -1,0 +1,31 @@
+{
+  "courseSlug": "fundamentals-of-web-development",
+  "quizzes": [
+    {
+      "id": 1,
+      "question": "What does HTML stand for?",
+      "options": [
+        "Hyper Text Markup Language",
+        "Home Tool Markup Language",
+        "Hyperlinks and Text Markup Language"
+      ],
+      "correct": 0
+    },
+    {
+      "id": 2,
+      "question": "Which tag is used for headings?",
+      "options": ["<h1>", "<head>", "<title>"],
+      "correct": 0
+    },
+    {
+      "id": 3,
+      "question": "What does CSS stand for?",
+      "options": [
+        "Cascading Style Sheets",
+        "Creative Style Syntax",
+        "Colorful Style System"
+      ],
+      "correct": 0
+    }
+  ]
+}

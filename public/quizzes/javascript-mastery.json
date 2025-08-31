@@ -1,0 +1,23 @@
+{
+  "courseSlug": "javascript-mastery",
+  "quizzes": [
+    {
+      "id": 1,
+      "question": "Which company developed JavaScript?",
+      "options": ["Netscape", "Microsoft", "Google"],
+      "correct": 0
+    },
+    {
+      "id": 2,
+      "question": "What is the output of `typeof []`?",
+      "options": ["object", "array", "undefined"],
+      "correct": 0
+    },
+    {
+      "id": 3,
+      "question": "Which symbol is used for comments in JavaScript?",
+      "options": ["//", "/*", "#"],
+      "correct": 0
+    }
+  ]
+}

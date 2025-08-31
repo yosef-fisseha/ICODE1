@@ -1,0 +1,23 @@
+{
+  "courseSlug": "introduction-to-cpp",
+  "quizzes": [
+    {
+      "id": 1,
+      "question": "Which symbol is used to include libraries in C++?",
+      "options": ["#", "@", "$"],
+      "correct": 0
+    },
+    {
+      "id": 2,
+      "question": "What is the correct main function signature in C++?",
+      "options": ["int main()", "void start()", "main()"],
+      "correct": 0
+    },
+    {
+      "id": 3,
+      "question": "Which operator is used for output in C++?",
+      "options": ["<<", ">>", "<>"],
+      "correct": 0
+    }
+  ]
+}

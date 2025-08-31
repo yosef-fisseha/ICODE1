@@ -1,0 +1,23 @@
+{
+  "courseSlug": "full-stack-development",
+  "quizzes": [
+    {
+      "id": 1,
+      "question": "Full-stack development includes?",
+      "options": ["Frontend and Backend", "Only Backend", "Only Frontend"],
+      "correct": 0
+    },
+    {
+      "id": 2,
+      "question": "Which database is SQL based?",
+      "options": ["MySQL", "MongoDB", "Firebase"],
+      "correct": 0
+    },
+    {
+      "id": 3,
+      "question": "REST API is used for?",
+      "options": ["Communication between client and server", "Designing UI", "Writing CSS"],
+      "correct": 0
+    }
+  ]
+}

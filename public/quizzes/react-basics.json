@@ -1,0 +1,23 @@
+{
+  "courseSlug": "react-basics",
+  "quizzes": [
+    {
+      "id": 1,
+      "question": "React is primarily used for?",
+      "options": ["Building user interfaces", "Database management", "Server setup"],
+      "correct": 0
+    },
+    {
+      "id": 2,
+      "question": "What is JSX?",
+      "options": ["A syntax extension for JavaScript", "A new CSS library", "A database query language"],
+      "correct": 0
+    },
+    {
+      "id": 3,
+      "question": "Which hook is used for state management?",
+      "options": ["useState", "useEffect", "useReducer"],
+      "correct": 0
+    }
+  ]
+}

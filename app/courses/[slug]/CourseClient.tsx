@@ -21,7 +21,6 @@ export default function CourseClient({ courseId }: Props) {
     async function fetchCourse() {
       setLoading(true);
       try {
-        // Fetch course JSON dynamically based on slug
         const res = await fetch(`/courses/${courseId}.json`);
         if (!res.ok) throw new Error("Course not found");
         const data = await res.json();
@@ -82,7 +81,18 @@ export default function CourseClient({ courseId }: Props) {
                 <div className="flex items-center gap-1"><BookOpen className="w-4 h-4" /> <span>By {course.instructor}</span></div>
               </div>
 
-              <Button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3">Start Learning</Button>
+              {/* Start Learning + Quizzes Buttons */}
+              <div className="flex flex-wrap gap-4 mt-4">
+                <Button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2">
+                  Start Learning
+                </Button>
+
+                <Link href={`/courses/${course.slug}/quizzes`}>
+                  <Button className="bg-green-600 hover:bg-green-700 text-white px-6 py-2">
+                    Quizzes
+                  </Button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
