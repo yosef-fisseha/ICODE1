@@ -17,10 +17,10 @@ export async function generateStaticParams() {
   }));
 }
 
-interface Props {
+interface PageProps {
   params: { slug: string };
 }
 
-export default function CoursePage({ params }: Props) {
+export default function Page({ params }: PageProps) {
   return <CourseClient courseId={params.slug} />;
 }
