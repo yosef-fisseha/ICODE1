@@ -6,6 +6,11 @@ import { Button } from "@/components/ui/button";
 import QuizzesPageClient from "./QuizzesPageClient";
 
 
+interface Props {
+  params: { slug: string };
+}
+
+
 interface Quiz {
   id: number;
   question: string;
@@ -20,6 +25,11 @@ interface QuizzesData {
 
 interface Props {
   courseSlug: string;
+}
+
+
+export default function QuizzesPage({ params }: Props) {
+  return <QuizzesPageClient courseSlug={params.slug} />;
 }
 
 export default function QuizzesPageClient({ courseSlug }: Props) {
