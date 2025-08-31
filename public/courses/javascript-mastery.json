@@ -1,0 +1,27 @@
+{
+  "slug": "javascript-mastery",
+  "title": "JavaScript Mastery",
+  "description": "Master modern JavaScript and build interactive web apps.",
+  "image": "/JavaScript Mastery.webp",
+  "backgroundColor": "bg-yellow-800",
+  "students": 1500,
+  "duration": "6h 20m",
+  "rating": 4.7,
+  "instructor": "Alex Johnson",
+  "videos": [
+    {
+      "id": "vid1",
+      "title": "JS Basics",
+      "duration": "11:00",
+      "thumbnail": "/thumbnails/js-basics.png",
+      "url": "https://www.youtube.com/embed/VIDEO_ID_6"
+    },
+    {
+      "id": "vid2",
+      "title": "DOM Manipulation",
+      "duration": "14:30",
+      "thumbnail": "/thumbnails/dom.png",
+      "url": "https://www.youtube.com/embed/VIDEO_ID_7"
+    }
+  ]
+}

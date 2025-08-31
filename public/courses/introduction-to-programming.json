@@ -1,0 +1,27 @@
+{
+  "slug": "introduction-to-programming",
+  "title": "Introduction to Programming",
+  "description": "A journey that equips you with the fundamental knowledge and skills needed to become a proficient programmer.",
+  "image": "/Intro-to-Programming.webp",
+  "backgroundColor": "bg-green-800",
+  "students": 900,
+  "duration": "4h 45m",
+  "rating": 4.2,
+  "instructor": "Jane Smith",
+  "videos": [
+    {
+      "id": "vid1",
+      "title": "Programming Basics",
+      "duration": "8:30",
+      "thumbnail": "/thumbnails/programming.png",
+      "url": "https://www.youtube.com/embed/VIDEO_ID_4"
+    },
+    {
+      "id": "vid2",
+      "title": "Variables & Data Types",
+      "duration": "12:15",
+      "thumbnail": "/thumbnails/variables.png",
+      "url": "https://www.youtube.com/embed/VIDEO_ID_5"
+    }
+  ]
+}
