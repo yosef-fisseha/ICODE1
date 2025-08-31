@@ -1,0 +1,27 @@
+{
+  "slug": "fundamentals-of-web-development",
+  "title": "Fundamentals of Web Development",
+  "description": "Learn the basics of HTML, CSS, and JavaScript.",
+  "image": "/cs.jpg",
+  "backgroundColor": "bg-blue-800",
+  "students": 1200,
+  "duration": "5h 30m",
+  "rating": 4.5,
+  "instructor": "John Doe",
+  "videos": [
+    {
+      "id": "vid1",
+      "title": "Introduction to HTML",
+      "duration": "10:25",
+      "thumbnail": "/thumbnails/html.png",
+      "url": "https://www.youtube.com/embed/VIDEO_ID_1"
+    },
+    {
+      "id": "vid2",
+      "title": "CSS Basics",
+      "duration": "12:40",
+      "thumbnail": "/thumbnails/css.png",
+      "url": "https://www.youtube.com/embed/VIDEO_ID_2"
+    }
+  ]
+}
