@@ -1,19 +1,19 @@
-"use client"
+// app/courses/page.tsx
+import CourseClient from "./[id]/CourseClient";
+// or wherever the CourseClient component is actually located
 
-import { useState } from "react"
-import { DashboardLayout } from "@/components/dashboard-layout"
-import { CourseTabs } from "@/components/course-tabs"
-import { CourseGrid } from "@/components/course-grid"
+// Generate static params for SSG
+export async function generateStaticParams() {
+  return [
+    { id: "1" },
+    { id: "2" },
+    { id: "3" },
+    { id: "7" },
+    // add all course IDs here
+  ];
+}
 
-export default function CoursesPage() {
-  const [activeCategory, setActiveCategory] = useState("Other courses")
-
-  return (
-    <DashboardLayout>
-      <div className="space-y-8">
-        <CourseTabs onTabChange={setActiveCategory} />
-        <CourseGrid activeCategory={activeCategory} />
-      </div>
-    </DashboardLayout>
-  )
+// Server Component: just passes courseId to client
+export default function CoursePage({ params }: { params: { id: string } }) {
+  return <CourseClient courseId={params.id} />;
 }

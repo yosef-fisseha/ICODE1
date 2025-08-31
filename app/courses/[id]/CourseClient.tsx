@@ -1,47 +1,36 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import { DashboardLayout } from "@/components/dashboard-layout"
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
-import { Play, Clock, Users, Star, BookOpen } from "lucide-react"
-import { useParams } from "next/navigation"
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
+import { useState, useEffect } from "react";
+import { DashboardLayout } from "@/components/dashboard-layout";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Play, Clock, Users, Star, BookOpen } from "lucide-react";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 
-// 👇 NEW: Tell Next.js what course IDs exist for static export
-export async function generateStaticParams() {
-  // you can hardcode, or better: read from a JSON file with all courses
-  return [
-    { id: "1" },
-    { id: "2" },
-    { id: "3" },
-    { id: "7" }, // add all existing courses here
-  ]
+interface Props {
+  courseId: string;
 }
 
-export default function CoursePage() {
-  const params = useParams()
-  const courseId = params.id as string
-  const [course, setCourse] = useState<any>(null)
-  const [selectedVideo, setSelectedVideo] = useState<any>(null)
-  const [loading, setLoading] = useState(true)
+export default function CourseClient({ courseId }: Props) {
+  const [course, setCourse] = useState<any>(null);
+  const [selectedVideo, setSelectedVideo] = useState<any>(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function fetchCourse() {
-      setLoading(true)
+      setLoading(true);
       try {
-        // fetch course JSON from public/courses/[id]/data/[id].json
-        const res = await fetch(`/courses/${courseId}/data/${courseId}.json`)
-        if (!res.ok) throw new Error("Course not found")
-        const data = await res.json()
-        setCourse(data)
+        const res = await fetch(`/courses/${courseId}/data/${courseId}.json`);
+        if (!res.ok) throw new Error("Course not found");
+        const data = await res.json();
+        setCourse(data);
       } catch (e) {
-        setCourse(null)
+        setCourse(null);
       }
-      setLoading(false)
+      setLoading(false);
     }
-    if (courseId) fetchCourse()
-  }, [courseId])
+    if (courseId) fetchCourse();
+  }, [courseId]);
 
   if (loading) {
     return (
@@ -50,7 +39,7 @@ export default function CoursePage() {
           <p className="text-gray-400">Loading...</p>
         </div>
       </DashboardLayout>
-    )
+    );
   }
 
   if (!course) {
@@ -60,7 +49,7 @@ export default function CoursePage() {
           <p className="text-gray-400">Course not found</p>
         </div>
       </DashboardLayout>
-    )
+    );
   }
 
   return (
@@ -143,5 +132,5 @@ export default function CoursePage() {
         </Dialog>
       </div>
     </DashboardLayout>
-  )
+  );
 }
