@@ -20,7 +20,8 @@ export default function CourseClient({ courseId }: Props) {
     async function fetchCourse() {
       setLoading(true);
       try {
-        const res = await fetch(`/courses/${courseId}/data/${courseId}.json`);
+        const res = await fetch(`/courses/${courseId}.json`);
+
         if (!res.ok) throw new Error("Course not found");
         const data = await res.json();
         setCourse(data);
